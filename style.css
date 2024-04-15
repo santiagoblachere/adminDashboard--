@@ -57,8 +57,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 4fr;
-    
-
+}
+.bold {
+    font-weight: bolder;
 }
 .sidebar {
     
@@ -99,7 +100,7 @@ header {
     grid-template-rows: 1 / 2;
     padding-left: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
 input[type="search"] {
     width: 700px;
@@ -148,4 +149,29 @@ main {
 }
 .last {
     padding-bottom: 50px;
+}
+.headerSecondRow {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-right: 80px;
+}
+.userSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navSection {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+button {
+    border-style: none;
+    background-color: var(--color_light);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: var(--color_super_light);
 }
