@@ -185,10 +185,13 @@ main {
     padding: 10px;
     padding-top: 30px;
 }
-.projectsLegend {
+.projectsLegend, .announcementsLegend, .trendingLegend {
     font-weight: bolder;
     font-size: 30px;
     padding-bottom: 5px;
+}
+.trendingLegend {
+    padding-top: 20px;
 }
 .cardsContainer {
     display: grid;
@@ -199,7 +202,7 @@ main {
     background-color: var(--color_super_light);
     padding-left: 10px;
     padding-top: 20px;
-    height: 150px;
+    height: 180px;
     border-left: var(--color_bold) 5px solid;
     display: flex;
     flex-direction: column;
@@ -212,4 +215,46 @@ main {
 }
 .cardLogos * {
     padding-right: 10px;
+}
+
+/* ANNOUNCEMENTS SECTION */
+
+.announcementsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: var(--color_super_light);
+    
+}
+.announcementItem {
+    padding-bottom: 25px;
+    border-bottom: var(--color_light) 1px solid;
+    height: 50px;
+}
+
+.announcementTitle, .cardTitle   {
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: var(--color_mid);
+}
+
+/* TRENDING SECTION */ 
+.trendingContainer {
+    background-color: var(--color_super_light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.trendingUser {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.trendTitle {
+font-weight: 300;
+color: var(--color_mid);
 }
